@@ -22,7 +22,7 @@
  */
 
 import $ from 'jquery';
-import { saveWidgetConfig } from 'local_accessibility/common';
+import {saveWidgetConfig} from 'local_accessibility/common';
 
 /**
  * Initialisation
@@ -44,7 +44,9 @@ export const init = (data) => {
         let userdata = data;
 
         const updatebtn = () => {
-            $btn.html(userdata ? M.str.accessibility_fontkerning.turnonkerning : M.str.accessibility_fontkerning.turnoffkerning);
+            $btn.html(userdata
+                ? M.util.get_string('turnonkerning', 'accessibility_fontkerning')
+                : M.util.get_string('turnoffkerning', 'accessibility_fontkerning'));
         };
         updatebtn();
 

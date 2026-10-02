@@ -20,6 +20,7 @@ along with Moodle.  If not, see <https://www.gnu.org/licenses/>. */
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-body.accessibility-fontkerning-none, body.accessibility-fontkerning-none * {
+body.accessibility-fontkerning-none,
+body.accessibility-fontkerning-none * {
     font-kerning: none;
 }
